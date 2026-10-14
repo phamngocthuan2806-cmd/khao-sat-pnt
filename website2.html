@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHẢO SÁT Ý KIẾN VỀ BẠN PHẠM NGỌC THUẬN</title>
+    <!-- Link kết nối file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>KHẢO SÁT Ý KIẾN</h2>
+        <p class="subtitle">Hãy chia sẻ tâm tư của bạn về bạn học Phạm Ngọc Thuận</p>
+
+        <form id="surveyForm">
+            <!-- Họ và tên -->
+            <div class="form-group">
+                <label for="fullname">HỌ VÀ TÊN (BIỆT DANH)</label>
+                <input type="text" id="fullname" placeholder="Nhập họ và tên..." required>
+            </div>
+
+            <!-- Đánh giá yêu thích -->
+            <div class="form-group">
+                <label>BẠN ĐÁNH GIÁ MỨC ĐỘ YÊU THÍCH CỦA MÌNH VỚI BẠN HỌC NÀY:</label>
+                <div class="options">
+                    <label><input type="radio" name="rating" value="ĐỈNH VẢI" required> ĐỈNH VẢI</label>
+                    <label><input type="radio" name="rating" value="ĐỈNH THƯỜNG THÔI"> ĐỈNH THƯỜNG THÔI</label>
+                    <label><input type="radio" name="rating" value="ĐỈNH ÂM BỈ"> ĐỈNH ÂM BỈ</label>
+                </div>
+            </div>
+
+            <!-- Thể thao -->
+            <div class="form-group">
+                <label>MÔN THỂ THAO BẠN THẤY BẠN THUẬN GIỎI:</label>
+                <div class="options">
+                    <label><input type="checkbox" name="interest" value="Cầu Lông"> Cầu Lông</label>
+                    <label><input type="checkbox" name="interest" value="Bóng chuyền"> Bóng chuyền</label>
+                    <label><input type="checkbox" name="interest" value="Thể thao điện tử"> Thể thao điện tử</label>
+                    <label><input type="checkbox" name="interest" value="Bóng đá"> Bóng đá</label>
+                </div>
+            </div>
+
+            <!-- Tâm tư -->
+            <div class="form-group">
+                <label for="feedback">TÂM TƯ MỎNG VỀ PHẠM NGỌC THUẬN</label>
+                <textarea id="feedback" rows="4" placeholder="Nhập tâm tư..."></textarea>
+            </div>
+
+            <!-- Nút gửi -->
+            <button type="submit">Gửi khảo sát</button>
+        </form>
+
+        <!-- Thẻ hiển thị kết quả (chỉ hiện khi bấm Gửi) -->
+        <div id="resultModal" class="result-box hidden">
+            <h3>CẢM ƠN BẠN ĐÃ HOÀN THÀNH KHẢO SÁT CỦA MÌNH!!! 🎉</h3>
+            <div id="resultContent"></div>
+            <button type="button" onclick="resetForm()">Quay về khảo sát</button>
+        </div>
+    </div>
+
+    <!-- Link kết nối file JS nằm ngay trước tag </body> -->
+    <script src="script.js"></script>
+</body>
+</html>
+ 
+
+
